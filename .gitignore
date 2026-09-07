@@ -1,6 +1,11 @@
+# ⚠️ 이 레포는 PUBLIC 입니다. 실제 딜 자료는 절대 커밋되지 않게 막아둡니다.
+reports/*
+!reports/.gitkeep
+!reports/README.md
+
 .DS_Store
 *.xlsx
 *.pptx
 *.docx
 *.pdf
-!.claude/skills/**/assets/*
+*.hwp
