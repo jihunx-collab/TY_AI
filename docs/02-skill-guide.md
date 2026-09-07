@@ -5,7 +5,7 @@
 **폴더 하나 + 마크다운 파일 하나.** 그게 다임.
 
 ```
-.claude/skills/investment-memo/
+.claude/skills/투자심의보고서/
 └── SKILL.md          ← "투자심의보고서 요청이 오면 이렇게 써라"
 ```
 
@@ -105,12 +105,12 @@ description: 투자심의보고서/투심보고서/IC메모/딜검토보고서 �
   스타트업·비상장사 지분투자 건의 목차, 밸류에이션, 리스크, Exit 시나리오 정리에 사용.
 ```
 
-### 방법 C. 이미 있는 스킬 복사해서 고치기
+### 방법 C. 기존 스킬 복사해서 고치기
 
-이 레포의 `investment-memo` 스킬을 복사해서 다른 보고서용으로 바꾸는 게 제일 빠름:
+스킬이 하나라도 생기면, 다음부터는 복사가 제일 빠름:
 
 ```bash
-cp -r .claude/skills/investment-memo .claude/skills/사후관리보고서
+cp -r .claude/skills/투자심의보고서 .claude/skills/사후관리보고서
 # SKILL.md 열어서 name / description / 목차만 바꾸기
 ```
 
@@ -121,7 +121,7 @@ cp -r .claude/skills/investment-memo .claude/skills/사후관리보고서
 SKILL.md 가 길어지면 쪼갬. 클로드가 **필요할 때만** 참조 파일을 읽어서 효율적임.
 
 ```
-.claude/skills/investment-memo/
+.claude/skills/투자심의보고서/
 ├── SKILL.md                      ← 절차 (항상 읽힘, 짧게 유지)
 ├── references/
 │   ├── report-template.md        ← 보고서 목차 원본
@@ -195,7 +195,7 @@ SKILL.md 안에서 이렇게 가리킴:
 
 | 스킬 | 하는 일 |
 |---|---|
-| `investment-memo` | 투자심의보고서 ← 이 레포에 이미 있음 |
+| `투자심의보고서` | 투심위 제출용 표준 보고서 ← **여기부터 시작** |
 | `deal-screening` | IR덱/사업계획서 받아서 1차 스크리닝 메모 |
 | `financial-model-review` | 엑셀 재무모델 뜯어서 가정 검증 |
 | `portfolio-update` | 분기 사후관리 보고서 |
