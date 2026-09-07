@@ -1,4 +1,4 @@
-# 01. 맥북 세팅 — 복사·붙여넣기만 하면 끝
+# 01. 태엽 설치 — 복사·붙여넣기만 하면 끝
 
 **터미널을 처음 써도 됩니다.** 회색 박스를 그대로 복사해서 붙여넣고 Enter만 치면 됩니다.
 각 단계마다 **"▶ 이렇게 나오면 성공"** 을 적어뒀으니 화면과 비교만 하세요.
@@ -34,6 +34,9 @@
 ## 터미널 여는 법
 
 `Command(⌘) + Space` → `터미널` 입력 → Enter
+
+> **cmux를 깔았다면** `터미널` 대신 `cmux` 를 입력해서 여세요. 아래 내용은 전부 똑같습니다.
+> (cmux도 터미널입니다. 나중에 클로드를 여러 개 동시에 돌릴 때 편해집니다)
 
 검은(또는 흰) 창이 뜨고 이렇게 생긴 줄이 보이면 준비 완료입니다.
 
@@ -205,7 +208,8 @@ claude
 
 ## 🎉 설치 끝!
 
-다음 → **[02-skill-guide.md](02-skill-guide.md)** (보고서 양식을 스킬로 만드는 법)
+**다음은 [README의 "첫날 실습"](../README.md#-설치-끝났으면-첫날-실습-30분) 으로 가세요.**
+가짜 회사로 보고서를 하나 뽑아보는 30분짜리 연습입니다. 여기까지 해야 감이 잡힙니다.
 
 > 앞으로 작업을 시작할 때는 항상 이 두 줄입니다:
 > ```bash
@@ -293,8 +297,7 @@ eval "$($BREWPATH shellenv)"
 <details>
 <summary><b>VS Code 연동</b> — 클로드가 고친 내용을 나란히 보기</summary>
 
-VS Code는 https://code.visualstudio.com 에서 받아서 **응용 프로그램** 폴더로 드래그하거나,
-Homebrew가 있으면 `brew install --cask visual-studio-code`.
+VS Code가 없으면 https://code.visualstudio.com 에서 받아 **응용 프로그램** 폴더로 드래그.
 
 연동:
 1. VS Code 실행 → `⌘ + Shift + P` → `shell command` 입력
@@ -340,19 +343,6 @@ soffice --headless --convert-to pdf 투자심의보고서.docx  # 워드 → PDF
 ```
 
 외울 필요 없습니다. 클로드한테 시키면 됩니다: `> 방금 만든 보고서 워드로 변환해줘`
-</details>
-
-<details>
-<summary><b>cmux</b> — 클로드 여러 개 동시에 돌리기</summary>
-
-보고서 3~4건을 병렬로 처리할 때 유용합니다. **충분히 익숙해진 뒤에** 하세요.
-
-```bash
-brew tap manaflow-ai/cmux
-brew install --cask cmux
-```
-
-공식: https://cmux.com
 </details>
 
 <details>
