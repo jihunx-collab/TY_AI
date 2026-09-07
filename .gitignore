@@ -1,0 +1,6 @@
+.DS_Store
+*.xlsx
+*.pptx
+*.docx
+*.pdf
+!.claude/skills/**/assets/*
